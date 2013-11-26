@@ -1,0 +1,16 @@
+Japan		        AFC 	
+Korea_Republic	        AFC 	
+Costa_Rica	        CONCACAF
+Mexico		        CONCACAF
+USA      	        CONCACAF
+Belgium	        	UEFA 	
+Bosnia_Herzegovina	UEFA 
+Netherlands	        UEFA	
+Portugal	        UEFA 
+Russia		        UEFA 	
+Spain		        UEFA 	
+Switzerland	        UEFA 	
+Argentina	        CONMEBOL
+Brazil		        CONMEBOL
+Uruguay               	CONMEBOL  
+Algeria	        	CAF 	

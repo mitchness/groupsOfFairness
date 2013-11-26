@@ -1,0 +1,16 @@
+Spain              2082
+Germany            2060
+Netherlands        1979
+England            1906
+Portugal           1905
+Italy              1887
+France             1855
+Switzerland        1822
+Russia             1819
+Greece             1813
+Belgium            1807
+Croatia            1779
+Bosnia_Herzegovina 1758
+Czech_Republic     1733
+Denmark            1729
+Serbia             1727

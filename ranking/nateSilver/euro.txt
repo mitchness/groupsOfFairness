@@ -1,0 +1,17 @@
+Spain               890
+Germany             882
+France              845
+Netherlands         834
+England             821
+Belgium             804
+Italy               800
+Bosniar_Herzegovina 793
+Russia              788
+Portugal            788
+Serbia              776
+Switzerland         773
+Greece              765
+Sweden              754
+Czech_Republic      740
+Croatia             739
+Denmark             696

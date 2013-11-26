@@ -1,0 +1,4 @@
+USA        788
+Costa_Rica 766
+Mexico     764
+Honduras   730

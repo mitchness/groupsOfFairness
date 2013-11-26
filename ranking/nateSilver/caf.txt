@@ -1,0 +1,5 @@
+Ivory_Coast 787
+Ghana       765
+Nigeria     756
+Cameroon    712
+Algeria     624

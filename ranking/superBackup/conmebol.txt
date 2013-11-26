@@ -1,0 +1,6 @@
+Argentina   1266
+Colombia    1178
+Uruguay     1164
+Brazil      1078
+Chile       1051
+Ecuador     862

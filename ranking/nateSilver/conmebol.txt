@@ -1,0 +1,6 @@
+Brazil    916
+Argentina 907
+Chile     875
+Colombia  860
+Uruguay   842
+Ecuador   819
