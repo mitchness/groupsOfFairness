@@ -1,5 +1,0 @@
-USA        1841
-Mexico     1784
-Costa_Rica 1717
-Honduras   1664
-
