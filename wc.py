@@ -137,26 +137,35 @@ def updateCountries(cList, paths):
 
         f.close()
 
-
+#
+# Recursive function that turns groupList into a combination.
+#
 def formGroups(cList, groupList):
     global count
     global total 
     global bestR
 
+    # Does the heavy lifting.  Gets all combinations
+    # of the cList.  I.e., cList choose 4.
     combs = itertools.combinations(cList,4)
         
     for combGroup in combs:
         count += 1
         group = Group(combGroup)
+        
+        # Can't have too many european countries, e.g.
         if not group.validate():  
             continue
         
+        # We don't want to append a reference.
         biggerGroupList = copy.copy(groupList)
         biggerGroupList.append(group)
         
-        
+        # Take the rest of the countries, and run
+        # formGroups again.  (If we should.)
         remainder = [x for x in cList if x not in combGroup]
 
+        # Only print sometimes.
         if (count % 100000) == 0:
             bestR = min(bestR, len(remainder))    
             Printer('stdDev{0:7} Depth {1:4}  Count {2:30} %{3:.12f} {4:30}'.format(Field.best, bestR, count, count/float(total), total))
@@ -167,12 +176,15 @@ def formGroups(cList, groupList):
             field.updateIfBest()
             
         else:
+            # Get rucursive.
             formGroups(remainder, biggerGroupList) 
 
+# For reporting only.
 # n Choose k (n|K)
 def nCk(n,k): 
     return int( reduce(mul, (Fraction(n-i, i+1) for i in range(k)), 1) )
 
+# For reporting only.
 # 32|4 * 28|4 * 24|4 ... 4|4.   E.g.
 def nCCk(n):
     return reduce(mul, [nCk(x,4) for x in range(n,0,-4)])
