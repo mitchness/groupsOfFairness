@@ -31,10 +31,10 @@ class Country:
 #
 class Group:
     testDict = dict(AFC      = 1,    
-                    CONCACAF = 1,
-                    CONMEBOL = 1,
+                    CONCACAF = 2,
+                    CONMEBOL = 3,
                     CAF      = 1,
-                    UEFA     = 2)
+                    UEFA     = 1)
 
     def __init__(self, subSeq):
         self.subSeq = subSeq
@@ -72,7 +72,7 @@ class Field:
         self.groupList = gList
         
     def __str__(self) :
-        return '\n'.join(map(str,self.groupList)) + '\n\n-----------------------'
+        return '\n\n'.join(map(str,self.groupList)) + '\n-----------------------'
 
     def addGroup(self, group):
         self.groupList.append(group)
@@ -130,12 +130,17 @@ def updateCountries(cList, paths):
             countryArr = line.split();
             name   = countryArr[0]
             points = countryArr[1]
+
+            sys.stdout.write("\nxxxxxxxxxxxxxxxxxxx " + name +  "  " + points)
+            sys.stdout.flush()
     
             for country in cList:
                 if country.name == name:
                     country.populate(points)
 
         f.close()
+
+    sys.stdout.write("\n\n")
 
 #
 # Recursive function that turns groupList into a combination.
@@ -182,26 +187,33 @@ def formGroups(cList, groupList):
 # For reporting only.
 # n Choose k (n|K)
 def nCk(n,k): 
-    return int( reduce(mul, (Fraction(n-i, i+1) for i in range(k)), 1) )
+    return len(list(itertools.combinations(range(n),k)))
 
 # For reporting only.
 # 32|4 * 28|4 * 24|4 ... 4|4.   E.g.
 def nCCk(n):
-    return reduce(mul, [nCk(x,4) for x in range(n,0,-4)])
+#    return reduce(mul, [nCk(x,4) for x in range(n,0,-4)])
+    return nCk(24,4) * nCk(20,4) * nCk(16,4) * nCk(12,4) * nCk(8,4) * nCk(4,4)
 
-
+countryList = initCounties('countries.txt')
 countryList = initCounties('countries-small-12.txt')
 countryList = initCounties('countries-small-16.txt')
-countryList = initCounties('countries.txt')
+countryList = initCounties('countries-goldCup2015.txt')
+countryList = initCounties('countries-copaAmerica2016.txt')
 
 path = 'ranking/nateSilver'
 path = 'ranking/elo'
 path = 'ranking/fifa'
 
-updateCountries(countryList, [path + '/euro.txt', 
-                              path + '/afc.txt',
-                              path + '/caf.txt',
-                              path + '/concacaf.txt',
+#updateCountries(countryList, [path + '/euro.txt', 
+#                              path + '/afc.txt',
+#                              path + '/caf.txt',
+#                              path + '/concacaf.txt',
+#                              path + '/conmebol.txt'])
+
+#updateCountries(countryList, [path + '/concacaf.txt'])
+
+updateCountries(countryList, [path + '/concacaf.txt',
                               path + '/conmebol.txt'])
 
 count = 0

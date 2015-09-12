@@ -1,0 +1,12 @@
+USA                    CONCACAF
+Panama                 CONCACAF
+Haiti                  CONCACAF
+Honduras               CONCACAF
+Costa_Rica             CONCACAF
+El_Salvador            CONCACAF
+Canada                 CONCACAF
+Jamaica                CONCACAF
+Mexico                 CONCACAF
+Guatemala              CONCACAF
+Trinidad_and_Tobago    CONCACAF
+Cuba                   CONCACAF

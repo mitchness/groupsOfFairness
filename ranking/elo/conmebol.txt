@@ -1,6 +1,9 @@
-Argentina   1266
-Colombia    1178
-Uruguay     1164
-Brazil      1078
-Chile       1051
-Ecuador     862
+Argentina           2050
+Brazil              2021
+Colombia            1979
+Chile               1955
+Uruguay             1855
+Ecuador             1801
+Peru                1788
+Venezuela           1648
+Bolivia             1614

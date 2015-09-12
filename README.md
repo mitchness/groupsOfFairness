@@ -43,3 +43,7 @@ Their data files are also included
      
 The fifa draw does not allow more than 2 euro teams per group 
 and no more that 1 from the others.
+
+
+To run:
+~/bin/wc$ python wc.py

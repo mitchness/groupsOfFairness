@@ -1,4 +1,6 @@
-USA		1040	
-Mexico		854	
-Costa_Rica	744
-Honduras	720
+Mexico               848
+USA                  823
+Costa_Rica           731
+Jamaica              602
+Trinidad_and_Tobago  594
+Panama               551

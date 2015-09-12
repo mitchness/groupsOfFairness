@@ -1,6 +1,10 @@
-Argentina	1266	
-Colombia	1178	
-Uruguay		1164	
-Brazil		1078	
-Chile		1051	
-Ecuador		862
+Argentina   1442
+Colombia    1224
+Brazil      1209
+Chile       1149
+Uruguay     1002
+Ecuador      764
+Peru         628
+Venezuela    612
+Paraguay     592
+Bolivia      521

@@ -1,4 +1,11 @@
-USA        1841
-Mexico     1784
-Costa_Rica 1717
-Honduras   1664
+Mexico              1852
+USA                 1774
+Costa_Rica          1753
+Paraguay            1677
+Panama              1673
+Jamaica             1586
+Trinidad_and_Tobago 1579
+Honduras            1517
+El_Salvador         1486
+Canada              1485
+Haiti               1475
