@@ -22,6 +22,8 @@ In other words, determine every single possible "8 groups of 4" and
 find the one (the field) that has the smallest standard deviation amongst
 the groups.
 
+[[Past Results|pastResults.md]]
+
 
 ##Math.
 Every single possible "8 groups of 4" is a big number.
