@@ -49,6 +49,8 @@ class Group:
         return sum(self.subSeq)    
 
     def validate(self):
+        # Euro, no validation.
+        return True
 
         # TestDict has our max count.  Increment each
         # region.  Fail if it goes past our max.
@@ -195,15 +197,18 @@ def nCCk(n):
 #    return reduce(mul, [nCk(x,4) for x in range(n,0,-4)])
     return nCk(24,4) * nCk(20,4) * nCk(16,4) * nCk(12,4) * nCk(8,4) * nCk(4,4)
 
-countryList = initCounties('countries.txt')
-countryList = initCounties('countries-small-12.txt')
-countryList = initCounties('countries-small-16.txt')
-countryList = initCounties('countries-goldCup2015.txt')
-countryList = initCounties('countries-copaAmerica2016.txt')
+#countryList = initCounties('countries.txt')
+#countryList = initCounties('countries-small-12.txt')
+#countryList = initCounties('countries-small-16.txt')
+#countryList = initCounties('countries-goldCup2015.txt')
+#countryList = initCounties('countries-copaAmerica2016.txt')
+countryList = initCounties('countries/countries-euro2016.txt')
 
 path = 'ranking/nateSilver'
 path = 'ranking/elo'
 path = 'ranking/fifa'
+path = 'ranking/fifa/2015/Nov'
+
 
 #updateCountries(countryList, [path + '/euro.txt', 
 #                              path + '/afc.txt',
@@ -211,10 +216,10 @@ path = 'ranking/fifa'
 #                              path + '/concacaf.txt',
 #                              path + '/conmebol.txt'])
 
-#updateCountries(countryList, [path + '/concacaf.txt'])
+#updateCountries(countryList, [path + '/concacaf.txt',
+#                              path + '/conmebol.txt'])
 
-updateCountries(countryList, [path + '/concacaf.txt',
-                              path + '/conmebol.txt'])
+updateCountries(countryList, [path + '/euro.txt'])
 
 count = 0
 bestR = 33
