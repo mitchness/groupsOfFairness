@@ -3,8 +3,6 @@ import itertools
 import copy
 import sys
 
-from operator    import mul   
-from fractions   import Fraction
 from collections import defaultdict
 
 
@@ -101,7 +99,7 @@ class Field:
         return self.avg
 
 
-# Print things to stdout on one line dynamically
+# Print things to stdOut on one line dynamically
 class Printer():
 
     def __init__(self,data):
@@ -160,7 +158,7 @@ def formGroups(cList, groupList):
         count += 1
         group = Group(combGroup)
         
-        # Can't have too many european countries, e.g.
+        # Can't have too many European countries, e.g.
         if not group.validate():  
             continue
         
@@ -183,7 +181,7 @@ def formGroups(cList, groupList):
             field.updateIfBest()
             
         else:
-            # Get rucursive.
+            # Get recursive.
             formGroups(remainder, biggerGroupList) 
 
 # For reporting only.
@@ -197,29 +195,29 @@ def nCCk(n):
 #    return reduce(mul, [nCk(x,4) for x in range(n,0,-4)])
     return nCk(24,4) * nCk(20,4) * nCk(16,4) * nCk(12,4) * nCk(8,4) * nCk(4,4)
 
-#countryList = initCounties('countries.txt')
-#countryList = initCounties('countries-small-12.txt')
-#countryList = initCounties('countries-small-16.txt')
-#countryList = initCounties('countries-goldCup2015.txt')
-#countryList = initCounties('countries-copaAmerica2016.txt')
-countryList = initCounties('countries/countries-euro2016.txt')
+#countryList = initCounties('countries/big-32.txt')
+#countryList = initCounties('countries/small-12.txt')
+#countryList = initCounties('countries/small-16.txt')
+#countryList = initCounties('countries/euro2016.txt')
+#countryList = initCounties('countries/copaAmerica2016.txt')
+countryList = initCounties('countries/goldCup2015.txt')
 
-path = 'ranking/nateSilver'
-path = 'ranking/elo'
-path = 'ranking/fifa'
-path = 'ranking/fifa/2015/Nov'
+#path = 'ranking/nateSilver'
+#path = 'ranking/elo'
+#path = 'ranking/fifa/2015/Nov'
+path = 'ranking/fifa/2014'
 
 
-#updateCountries(countryList, [path + '/euro.txt', 
-#                              path + '/afc.txt',
-#                              path + '/caf.txt',
-#                              path + '/concacaf.txt',
-#                              path + '/conmebol.txt'])
+updateCountries(countryList, [path + '/euro.txt', 
+                              path + '/afc.txt',
+                              path + '/caf.txt',
+                              path + '/concacaf.txt',
+                              path + '/conmebol.txt'])
 
 #updateCountries(countryList, [path + '/concacaf.txt',
 #                              path + '/conmebol.txt'])
 
-updateCountries(countryList, [path + '/euro.txt'])
+#updateCountries(countryList, [path + '/euro.txt'])
 
 count = 0
 bestR = 33
