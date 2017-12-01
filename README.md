@@ -1,6 +1,6 @@
 This project will find the fairest FIFA World Cup draw.
 
-##Primer.
+# Primer.
 The world cup has 32 teams.  They are grouped in 4.
 So 8 groups of 4.
 
@@ -25,13 +25,13 @@ the groups.
 [Past Results](pastResults.md)
 
 
-##Math.
+# Math.
 Every single possible "8 groups of 4" is a big number.
 (32 | 4) * (28 | 4) * (24 | 4) ... (4 | 4) = 2390,461,829,733,887,910,000,000
 https://www.google.com/search?q=32+choose+4&oq=32+choose+4&aqs=chrome..69i57j0j69i59l2j69i61.3021j0j4&sourceid=chrome&espv=210&es_sm=91&ie=UTF-8#es_sm=91&espv=210&q=32%20choose%204%20times%2028%20choose%204%20times%2024%20choose%204%20times%2020%20choose%204%20times%2016%20choose%204%20times%2012%20choose%204%20times%208%20choose%204%20times%204%20choose%204
 
 
-##Errata
+# Errata
 The official FIFA ranking are notoriously inaccurate.
 But they are official.
 
@@ -48,4 +48,4 @@ and no more that 1 from the others.
 
 
 To run:
-~/bin/wc$ python wc.py
+```~/bin/wc$ python wc.py```
